@@ -6,6 +6,26 @@ Telegram botunuzu kendi ChatGPT dot asistanınıza bağlayan Windows üzerinde �
 
 Bu proje bağımsızdır; OpenAI veya Telegram tarafından geliştirilmemiştir.
 
+## English overview
+
+**Developed by Revothin Yacht Electrical System.**
+
+Dot Telegram Bridge is a Windows MCP bridge that connects your Telegram bot to your own ChatGPT dot assistant. Send questions and tasks through a private Telegram chat; your dot can use its connected tools to investigate and send the results back to the same chat.
+
+### Features
+
+- Accepts private text messages from one paired owner.
+- Uses a persistent SQLite queue, signed MCP events, and duplicate-send protection.
+- Sends an immediate acknowledgement and updates an elapsed-time counter in the same message.
+- Shows delivery, inbox-read, and completion status without inventing a remaining-time estimate.
+- Connects a local HTTP server through an OpenAI Secure MCP Tunnel.
+
+Computer and email access depend on the dot's separate connections and permissions. The bridge does not directly integrate with BlueMail or provide automatic email monitoring by itself. The read status indicates inbox access, not a live heartbeat from the assistant.
+
+You need Windows, Python 3.10+ with Tkinter, your own Telegram bot, and a ChatGPT account with access to custom MCP plugins and dot event tasks. Your PC, bridge, and tunnel must remain running. Follow the setup instructions below.
+
+This is an independent project and is not developed by OpenAI or Telegram. Copyright © 2026 Revothin Yacht Electrical System. All rights reserved; no separate open-source license has been granted.
+
 ## Özellikler
 
 - Tek bir eşleştirilmiş sahibin özel Telegram mesajlarını kabul eder.
